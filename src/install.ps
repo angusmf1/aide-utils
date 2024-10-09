@@ -1,0 +1,26 @@
+# install.ps
+
+# Download and install the mkcert binary
+Invoke-WebRequest -Uri "https://github.com/FiloSottile/mkcert/releases/download/v1.4.4/mkcert-v1.4.4-windows-amd64.exe" -OutFile "$env:USERPROFILE\Downloads\mkcert.exe"
+
+# Move the mkcert binary to a folder in the system path (requires admin rights)
+Move-Item -Path "$env:USERPROFILE\Downloads\mkcert.exe" -Destination "C:\Windows\System32\mkcert.exe"
+
+# Download the root CA certificate
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/aide-team/aide-utils/refs/heads/main/files/rootCA.pem" -OutFile "$env:USERPROFILE\Downloads\rootCA.pem"
+
+# Get the mkcert CA root folder and move the root CA certificate there
+$caRootPath = & mkcert -CAROOT
+if (-not (Test-Path -Path $caRootPath)) {
+    New-Item -Path $caRootPath -ItemType Directory
+}
+Move-Item -Path "$env:USERPROFILE\Downloads\rootCA.pem" -Destination $caRootPath
+
+# Install the root CA certificate
+& mkcert -install
+
+# Backup the hosts file
+Copy-Item -Path "C:\Windows\System32\drivers\etc\hosts" -Destination "C:\Windows\System32\drivers\etc\hosts.bak"
+
+# Download the new hosts file and append it to the existing hosts file
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/aide-team/aide-utils/refs/heads/main/files/hosts.txt" -OutFile "$env:USERPROFILE\Downloads\hosts.txt"
