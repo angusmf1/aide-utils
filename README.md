@@ -13,5 +13,5 @@ curl -sfL https://raw.githubusercontent.com/aide-team/aide-utils/refs/heads/main
 On Windows (Powershell):
 
 ```powershell
-. { iwr -useb https://raw.githubusercontent.com/aide-team/aide-utils/refs/heads/main/src/install.ps1 } | iex; install
+. { iwr -useb https://raw.githubusercontent.com/aide-team/aide-utils/refs/heads/main/src/install.ps1 } | iex;
 ```
