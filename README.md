@@ -4,8 +4,14 @@ This reposuitory contains various utilities for working with the AI Development 
 
 ### Installation
 
-On UNIX (Ubuntu):
+On UNIX (Bash):
 
 ```bash
 curl -sfL https://raw.githubusercontent.com/aide-team/aide-utils/refs/heads/main/src/install.sh | bash -
+```
+
+On Windows (Powershell):
+
+```powershell
+. { iwr -useb https://raw.githubusercontent.com/aide-team/aide-utils/refs/heads/main/src/install.ps1 } | iex; install
 ```
