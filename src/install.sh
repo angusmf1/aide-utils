@@ -21,4 +21,9 @@ mkdir -p $(mkcert -CAROOT) && \
 # Install the certificate in the trusted store
 mkcert -install
 
-# 
+# Update the hosts file; ensure that CRLF is converted to LF for UNIX
+sudo cp /etc/hosts /etc/hosts.bak && \
+    wget -q -O - https://raw.githubusercontent.com/aide-team/aide-utils/refs/heads/main/files/hosts.txt | tr -d '\r' | sudo tee -a /etc/hosts > /dev/null && \
+    echo ''0 | sudo tee -a /etc/hosts > /dev/null
+
+exit 0
