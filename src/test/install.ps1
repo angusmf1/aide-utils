@@ -6,4 +6,4 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/angusmf1/aide-utils/re
  
 # Install the root CA certificate.
 Write-Output "[+] Preparing root CA..."
-Import-Certificate -FilePath .\MyCustomCA.crt -CertStoreLocation "Cert:\CurrentUser\Root\"
+Import-Certificate -FilePath "$env:USERPROFILE\Downloads\MyCustomCA.crt" -CertStoreLocation "Cert:\CurrentUser\Root\"
