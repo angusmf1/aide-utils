@@ -12,11 +12,11 @@ wget https://github.com/FiloSottile/mkcert/releases/download/v1.4.4/mkcert-v1.4.
     sudo mv mkcert-v1.4.4-linux-amd64 /usr/local/bin/mkcert
 
 # Download the root CA certificate
-wget https://raw.githubusercontent.com/angusmf1/aide-utils/refs/heads/main/files/test/rootCA.pem
+wget https://raw.githubusercontent.com/angusmf1/aide-utils/refs/heads/main/files/test/rootCA.crt
 
 # Move the certificate to the proper location
 mkdir -p $(mkcert -CAROOT) && \
-    mv rootCA.pem $(mkcert -CAROOT)
+    mv rootCA.crt $(mkcert -CAROOT)
 
 # Install the certificate in the trusted store
 mkcert -install
