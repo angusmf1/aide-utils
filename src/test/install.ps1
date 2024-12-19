@@ -9,7 +9,7 @@ Invoke-WebRequest -Uri "https://github.com/FiloSottile/mkcert/releases/download/
 
 # Download the root CA certificate
 echo "Downloading root CA certificate..."
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/aide-team/aide-utils/refs/heads/main/files/rootCA.pem" -OutFile "$env:USERPROFILE\Downloads\rootCA.pem"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/aide-team/aide-utils/refs/heads/main/files/test/rootCA.pem" -OutFile "$env:USERPROFILE\Downloads\rootCA.pem"
 
 # Get the mkcert CA root folder and move the root CA certificate there
 echo "Preparing root CA..."

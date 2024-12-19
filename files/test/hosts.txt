@@ -1,0 +1,9 @@
+# AIDE services
+10.7.2.219 api.aide.cosmos.io
+10.7.2.219 web.aide.cosmos.io
+10.7.2.219 container.aide.cosmos.io
+10.7.2.219 docs.aide.cosmos.io
+10.7.2.219 mlflow.aide.cosmos.io
+ 
+# Substrate services
+10.7.2.219 grafana.monitoring.cosmos.io
