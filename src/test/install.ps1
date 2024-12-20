@@ -1,11 +1,5 @@
 # Install AIDE configuration.
 
-# Ensure administrative privileges
-if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
-    Write-Error "This script must be run as an administrator. Exiting."
-    exit 1
-}
-
 # Define paths
 $UserProfile = $env:USERPROFILE
 $RootCAPath = "$UserProfile\Downloads\MyCustomCA.crt"
