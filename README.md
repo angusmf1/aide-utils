@@ -1,4 +1,6 @@
+
 <img src="files/AIDE.png" alt="AIDE Logo" width="300">
+
 
 
 ## `aide-utils`
@@ -47,5 +49,3 @@ On Windows (Powershell):
    - Register for an account by setting a username and password.  
    - Log in to start using AIDE.
 
-
-![AIDE Logo](files/AIDE.png)
