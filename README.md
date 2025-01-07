@@ -1,4 +1,4 @@
-<img src="files/aide.png" alt="AIDE Logo" width="300">
+<img src="files/AIDE.png" alt="AIDE Logo" width="300">
 
 
 ## `aide-utils`
