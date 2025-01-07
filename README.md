@@ -30,3 +30,16 @@ On Windows (Powershell):
 . { iwr -useb https://raw.githubusercontent.com/angusmf1/aide-utils/refs/heads/main/src/test/install.ps1 } | iex;
 ```
 
+
+### Instructions for cArmy AVD Users
+
+1. **Run Installation Command**  
+   Open a PowerShell terminal and execute the installation command for AIDE-Test on Windows.  
+   When prompted, click **Yes** to confirm.
+
+2. **Navigate to AIDE**  
+   Open a browser and go to: [web.aide.cosmos.io](https://web.aide.cosmos.io)
+
+3. **Register and Log In**  
+   - Register for an account by setting a username and password.  
+   - Log in to start using AIDE.
