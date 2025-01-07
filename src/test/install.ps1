@@ -1,4 +1,4 @@
-# Install AIDE configuration.
+# Install AIDE-Test configuration.
  
 # Download the root CA certificate.
 Write-Output "[+] Downloading root CA certificate..."
