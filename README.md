@@ -33,6 +33,8 @@ On Windows (Powershell):
 
 ### Instructions for cArmy AVD Users
 
+![AIDE Logo](files/AIDE.png)
+
 1. **Run Installation Command**  
    Open a PowerShell terminal and execute the installation command for AIDE-Test on Windows.  
    When prompted, click **Yes** to confirm.
