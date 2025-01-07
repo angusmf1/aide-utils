@@ -5,7 +5,7 @@
 
 ## `aide-utils`
 
-This reposuitory contains various utilities for working with the AI Development Environment.
+This repository contains various utilities for working with the AI Development Environment.
 
 ### Installation for AIDE-Dev
 
