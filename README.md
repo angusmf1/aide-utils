@@ -1,3 +1,6 @@
+<img src="./aide.png" alt="AIDE Logo" width="300">
+
+
 ## `aide-utils`
 
 This reposuitory contains various utilities for working with the AI Development Environment.
